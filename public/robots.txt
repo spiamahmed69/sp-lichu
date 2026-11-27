@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sp-lichu.vercel.app/sitemap.xml
