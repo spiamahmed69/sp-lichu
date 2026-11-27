@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hind Siliguri", "Noto Sans Bengali", system-ui, sans-serif;
+  --color-brand: #df2d4d;
+  --color-brand-dark: #cd0723;
+  --color-brand-mid: #d42242;
+  --color-brand-soft: #e13e5c;
+  --color-brand-light: #e65c75;
+  --color-mint: #f2fbf5;
+}
+
+html { scroll-behavior: smooth; }
+body { background: #ffffff; color: #1f2937; font-family: "Hind Siliguri", "Noto Sans Bengali", system-ui, sans-serif; }
+::selection { background: #df2d4d; color: #fff; }
+
+/* SP Lichu design tokens — red #DF2D4D, white cards, amber stars */
+.btn-red { background: #df2d4d; color: #fff; font-weight: 700; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: .5rem; transition: filter .15s ease, transform .15s ease; }
+.btn-red:hover { filter: brightness(1.08); }
+.btn-red:active { transform: scale(.98); }
+.btn-red-pill { background: #df2d4d; color: #fff; font-weight: 700; border-radius: 9999px; display: inline-flex; align-items: center; gap: .6rem; transition: filter .15s ease; }
+.btn-red-pill:hover { filter: brightness(1.08); }
+.btn-outline-red { background: #fff; color: #df2d4d; border: 1px solid #df2d4d; font-weight: 700; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: .5rem; transition: background .15s ease; }
+.btn-outline-red:hover { background: #fdf2f4; }
+.input-mint { width: 100%; background: #eefaf2; border: 1px solid #d1e7d8; border-radius: 9999px; padding: .7rem 1.1rem; color: #1f2937; outline: none; font-size: .95rem; }
+.input-mint:focus { border-color: #df2d4d; box-shadow: 0 0 0 3px rgba(223,45,77,.15); background: #fff; }
+.input-mint::placeholder { color: #9ca3af; }
+.input-plain { width: 100%; background: #fff; border: 1px solid #d1d5db; border-radius: .6rem; padding: .7rem .9rem; color: #1f2937; outline: none; font-size: .95rem; }
+.input-plain:focus { border-color: #df2d4d; box-shadow: 0 0 0 3px rgba(223,45,77,.15); }
+.label-red { display: block; font-size: .85rem; font-weight: 700; color: #df2d4d; margin-bottom: .35rem; }
+.label-dark { display: block; font-size: .9rem; font-weight: 700; color: #1f2937; margin-bottom: .35rem; }
+.card-product { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: .75rem; transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+.card-product:hover { border-color: #df2d4d; box-shadow: 0 8px 22px rgba(223,45,77,.10); transform: translateY(-2px); }
+.section-rule { height: 2px; background: #df2d4d; }
+.footer-grad { background: linear-gradient(180deg, #d42242 0%, #cd0723 100%); }
+.hero-grad { background: linear-gradient(90deg, #e13e5c 0%, #e65c75 100%); }
+.login-grad { background: linear-gradient(90deg, #e13e5c, #df2d4d); }
+.img-fallback { background: linear-gradient(135deg, #fde8ec, #f9b8c4 55%, #df2d4d); display: flex; align-items: center; justify-content: center; }
+.drawer-slide { animation: drawerIn .25s ease both; }
+@keyframes drawerIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
+.fade-in { animation: fadeIn .3s ease both; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
